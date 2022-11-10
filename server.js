@@ -3,13 +3,13 @@ const express = require('express');
 const session = require('express-session');
 const routes = require('./controllers');
 
+// Import the custom helper methods
+const helpers = require('./utils/helpers');
+
 // Import express-handlebars
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({ helpers });
 const path = require('path');
-
-// Import the custom helper methods
-const helpers = require('./utils/helpers');
 
 const sequelize = require('./config/connection');
 // Create a new sequelize store using the express-session package
