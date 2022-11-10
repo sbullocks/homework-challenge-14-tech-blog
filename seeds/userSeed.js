@@ -10,4 +10,4 @@ const userSeed = [
 
 const seedUsers = () => User.bulkCreate(userSeed);
 
-module.exports = seedPost;
+module.exports = seedUsers;
